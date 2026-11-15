@@ -8,7 +8,7 @@ KAFKA_TOPIC = "students-progress-topic"
 KEYSTORE_PATH = "/content/colab_lab/kafka.keystore.p12"
 TRUSTSTORE_PATH = "/content/colab_lab/kafka.truststore.jks"
 
-KEYSTORE_PASSWORD = "pasw12"
+KEYSTORE_PASSWORD = "passw12"
 
 spark = SparkSession.builder \
     .appName("Lab3_StreamProcessing") \
