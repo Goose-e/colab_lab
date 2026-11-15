@@ -2,7 +2,7 @@ from pyspark.sql import SparkSession
 from pyspark.sql.functions import col, from_json, desc
 from pyspark.sql.types import StructType, StructField, IntegerType, DoubleType, StringType
 
-KAFKA_BOOTSTRAP_SERVERS = "kafka-xxxxxx.aivencloud.com:11492"
+KAFKA_BOOTSTRAP_SERVERS = "kafka-3b640a91-kolosovich19-3d1c.b.aivencloud.com:13375"
 KAFKA_TOPIC = "students-progress-topic"
 
 TRUSTSTORE_PATH = "/content/kafka.truststore.jks"

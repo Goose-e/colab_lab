@@ -3,6 +3,7 @@ import pandas as pd
 import json
 import time
 
+
 KAFKA_BOOTSTRAP_SERVERS = "kafka-3b640a91-kolosovich19-3d1c.b.aivencloud.com:13375"
 KAFKA_TOPIC = "students-progress-topic"
 
