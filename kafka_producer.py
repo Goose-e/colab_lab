@@ -7,9 +7,9 @@ import time
 KAFKA_BOOTSTRAP_SERVERS = "kafka-3b640a91-kolosovich19-3d1c.b.aivencloud.com:13375"
 KAFKA_TOPIC = "students-progress-topic"
 
-SSL_CA_LOCATION = "/content/ca.pem"
-SSL_CERT_LOCATION = "/content/service.cert"
-SSL_KEY_LOCATION = "/content/service.key"
+SSL_CA_LOCATION = "/content/colab_lab/ca.pem"
+SSL_CERT_LOCATION = "/content/colab_lab/service.cert"
+SSL_KEY_LOCATION = "/content/colab_lab/service.key"
 
 producer = KafkaProducer(
     bootstrap_servers=KAFKA_BOOTSTRAP_SERVERS,
