@@ -11,7 +11,7 @@ spark = SparkSession.builder \
 spark.sparkContext.setLogLevel("WARN")
 
 DATA_INPUT_PATH = "/content/colab_lab/raw_data.csv"
-DATA_OUTPUT_PATH = "/content/colab_lab/lab3_results/"
+DATA_OUTPUT_PATH = "/content/colab_lab/"
 
 df = spark.read.csv(DATA_INPUT_PATH, header=True, inferSchema=True)
 df = df.dropna().dropDuplicates()
