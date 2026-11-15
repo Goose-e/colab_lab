@@ -1,12 +1,12 @@
 import subprocess
 import os
 
-CA_PEM = "/content/ca.pem"
-CERT_PEM = "/content/service.cert"
-KEY_PEM = "/content/service.key"
-KEYSTORE_PATH = "/content/kafka.keystore.p12"
-TRUSTSTORE_PATH = "/content/kafka.truststore.jks"
-KEYSTORE_PASSWORD = "changeit"
+CA_PEM = "/content/colab_lab/ca.pem"
+CERT_PEM = "/content/colab_lab/service.cert"
+KEY_PEM = "/content/colab_lab/service.key"
+KEYSTORE_PATH = "/content/colab_lab/kafka.keystore.p12"
+TRUSTSTORE_PATH = "/content/colab_lab/kafka.truststore.jks"
+KEYSTORE_PASSWORD = "passw12"
 
 if not all([os.path.exists(CA_PEM), os.path.exists(CERT_PEM), os.path.exists(KEY_PEM)]):
     raise FileNotFoundError("Сертификаты не найдены")
