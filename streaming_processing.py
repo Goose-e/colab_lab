@@ -5,13 +5,14 @@ from pyspark.sql.types import StructType, StructField, IntegerType, DoubleType, 
 KAFKA_BOOTSTRAP_SERVERS = "kafka-3b640a91-kolosovich19-3d1c.b.aivencloud.com:13375"
 KAFKA_TOPIC = "students-progress-topic"
 
-TRUSTSTORE_PATH = "/content/kafka.truststore.jks"
-KEYSTORE_PATH = "/content/kafka.keystore.p12"
-KEYSTORE_PASSWORD = "changeit"
+KEYSTORE_PATH = "/content/colab_lab/kafka.keystore.p12"
+TRUSTSTORE_PATH = "/content/colab_lab/kafka.truststore.jks"
+
+KEYSTORE_PASSWORD = "pasw12"
 
 spark = SparkSession.builder \
     .appName("Lab3_StreamProcessing") \
-    .config("spark.jars.packages", "org.apache.spark:spark-sql-kafka-0-10_2.12:3.4.0") \
+    .config("spark.jars.packages", "org.apache.spark:spark-sql-kafka-0-10_2.13:4.3.0") \
     .config("spark.sql.streaming.checkpointLocation", "/tmp/checkpoint") \
     .getOrCreate()
 
